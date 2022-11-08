@@ -32,7 +32,7 @@ const ToDoList = () => {
 	return (
 		<div>
 			<h1 className="text-center my-3">List of To Do's</h1>
-			<div class="d-flex justify-content-lg-center">
+			<div className="d-flex justify-content-lg-center">
                 <ul className="list-group">
                     <li className="list-group-item"><input onKeyDown={pressEnterToInput} onChange={ event => setInputValue(event.target.value)} value={inputValue} type="text" className="form-control" placeholder="Add a task" aria-label="Recipient's username" aria-describedby="basic-addon2"/></li>
                     {listOfTodos}
